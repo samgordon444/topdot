@@ -279,6 +279,10 @@ p {
     font-size: 18px;
 }
 
+.p-large {
+    font-size: 20px;
+}
+
 .overline {
     display:inline-block;
     padding-bottom: 16px;
@@ -381,11 +385,126 @@ p {
 #locations-events {
     text-align: center;
     padding-bottom: 0;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #locations-events p,
 #locations-events .overline {
     font-family: 'Poppins', system-ui, sans-serif;
+}
+
+.locations-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.locations-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.location-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.etsy-link-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #FAF5EF;
+    border-radius: 50%;
+    padding: 40px;
+    aspect-ratio: 1;
+    text-align: center;
+    max-width: 400px;
+}
+
+.etsy-link-row h3 {
+    font-size: 28px;
+}
+
+/* ===== Footer ===== */
+.site-footer {
+    background-color: #FAF5EF;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.site-footer p {
+    margin: 0;
+    font-size: 16px;
+    color: #4F3842;
+}
+
+/* Gallery row after locations section */
+#locations-events + .gallery-row-2 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+/* Reduce footer margin when it follows the new gallery row */
+#locations-events + .gallery-row-2 + .site-footer {
+    margin-top: 20px;
+}
+
+/* Awards and Recognition section */
+#awards-recognition {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#awards-recognition h2 {
+    padding-bottom: 48px;
+}
+
+.awards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.award-item {
+    background-color: #FAF5EF;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.award-item p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.award-item-with-image {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.award-image {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.award-content {
+    flex: 1;
 }
 
 #learn-dotting {
@@ -563,6 +682,69 @@ p {
     #learn-dotting .lessons-image:after {
         background: linear-gradient(90deg, #7E3252 0%, rgba(126, 50, 82, 0) 40%);
     }
+
+    .locations-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+    }
+
+    .locations-grid {
+        flex-direction: column;
+        gap: 20px;
+        flex: 2;
+        align-items: flex-start;
+    }
+
+    .location-item {
+        align-items: flex-start;
+        text-align: left;
+        max-width: none;
+    }
+
+    .etsy-link-row {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        background-color: #FAF5EF;
+        border-radius: 50%;
+        padding: 40px;
+        aspect-ratio: 1;
+        text-align: center;
+    }
+
+    #locations-events {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    #awards-recognition {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .awards-container {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .award-item {
+        flex: 1;
+    }
+
+    .award-item-with-image {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .award-image {
+        width: 100%;
+    }
+
 }
 
 @media (min-width: 1400px) {
