@@ -328,6 +328,8 @@ p {
     padding: 24px 0 0;
 }
 
+/* ===== Gallery Items ===== */
+/* Base gallery item styles */
 .gallery-item {
     width: 160px;
     height: 160px;
@@ -336,40 +338,69 @@ p {
     background-size: cover;
     background-position: center;
 }
+
+/* Gallery positioning */
 .gallery-item-1, .gallery-item-5 {
     margin-top: -24px;
 }
 .gallery-item-3, .gallery-item-7 {
     margin-top: 16px;
 }
-.gallery-item-1 {
-    background-image: url(art1.png);
+.gallery-item-9, .gallery-item-13 {
+    margin-top: -24px;
 }
-.gallery-item-2 {
-    background-image: url(art2.png);
-}
-.gallery-item-3 {
-    background-image: url(art3.png);
-}
-.gallery-item-4 {
-    background-image: url(art4.png);
-}
-.gallery-item-5 {
-    background-image: url(art5.png);
+.gallery-item-11 {
+    margin-top: 16px;
 }
 
+/* Gallery row 1 (items 1-5) - after hero */
+.gallery-item-1 {
+    background-image: url(art/art1.png);
+}
+.gallery-item-2 {
+    background-image: url(art/art2.png);
+}
+.gallery-item-3 {
+    background-image: url(art/art3.png);
+}
+.gallery-item-4 {
+    background-image: url(art/art4.png);
+}
+.gallery-item-5 {
+    background-image: url(art/art5.png);
+}
+
+/* Gallery row 2 (items 6-8) - after about section */
 .gallery-item-6, .gallery-item-7, .gallery-item-8 {
     width: 240px;
     height: 240px;
 }
 .gallery-item-6 {
-    background-image: url(art6.png);
+    background-image: url(art/art16.png);
 }
 .gallery-item-7 {
-    background-image: url(art7.png);
+    background-image: url(art/art18.png);
 }
 .gallery-item-8 {
-    background-image: url(art8.png);
+    background-image: url(art/art12.png);
+}
+
+/* Gallery row 3 (items 9-13) - after awards section */
+/* Add background images for items 9-13 here as needed */
+.gallery-item-9 {
+    background-image: url(art/art9.png);
+}
+.gallery-item-10 {
+    background-image: url(art/art10.png);
+}
+.gallery-item-11 {
+    background-image: url(art/art11.png);
+}
+.gallery-item-12 {
+    background-image: url(art/art14.png);
+}
+.gallery-item-13 {
+    background-image: url(art/art17.png);
 }
 
 #about {
@@ -488,6 +519,7 @@ p {
 .award-item p {
     margin: 0;
     font-weight: bold;
+    font-size: 22px;
 }
 
 .award-item-with-image {
@@ -640,6 +672,7 @@ p {
         line-height: 3.2rem;
     }
 
+    /* Gallery responsive styles */
     .gallery-row {
         padding: 64px 0 0;
     }
@@ -655,13 +688,19 @@ p {
     .gallery-item-3, .gallery-item-7 {
         margin-top: 32px;
     }
+    .gallery-item-9, .gallery-item-13 {
+        margin-top: -64px;
+    }
+    .gallery-item-11 {
+        margin-top: 32px;
+    }
 
     .gallery-item-6, .gallery-item-7, .gallery-item-8 {
-        width: 440px;
-        height: 440px;
+        width: 600px;
+        height: 600px;
     }
     .gallery-item-7 {
-        margin-top:80px
+        margin-top: 80px;
     }
 
     #learn-dotting {
